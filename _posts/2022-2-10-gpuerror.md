@@ -18,6 +18,4 @@ RuntimeError: Tensor for argument #2 'mat1' is on CPU, but expected it to be GPU
 결과적으로는 gpu로 할당해주어야 하고 이는 데이터를 처리하는 코드부분에서 .to('cuda') 를 붙여줌으로써 해결 가능하다.
 
 
-'''
-x,y = x.to('cuda'), y.to('cuda')
-'''
+`x,y = x.to('cuda'), y.to('cuda')`
