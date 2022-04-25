@@ -14,6 +14,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 layer = nn.Conv2d(in_channels = 1, out_channels = 3, kernel_size = 3, stride = 1).to(device)
 print(layer)
 ```
+
 #Conv2d(1, 3, kernel_size=(3, 3), stride=(1, 1))
 
 이러한 경우 layer의 weight를 보려고 
